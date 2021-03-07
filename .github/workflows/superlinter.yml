@@ -10,7 +10,7 @@ jobs:
     # Name the Job
     name: Lint code base
     # Set the type of machine to run on
-    runs-on: {{matrix.os}}
+    runs-on: ${{matrix.os}}
     strategy:
       matrix:
         os: [ubuntu-latest, windows-latest, maxOS-latest]
